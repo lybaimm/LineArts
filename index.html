@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LineArts Studio — Design Agency</title>
+    <meta name="description" content="LineArts Studio adalah design agency yang membangun, membuat, dan mengaplikasikan produk digital berkualitas tinggi.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <header class="navbar">
+        <div class="menu-icon" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo-header">
+            <img src="img/image 17.png" alt="LineArts Studio Logo">
+        </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#about" class="nav-item">About Us</a></li>
+            <li><a href="#works" class="nav-item">Our Works</a></li>
+            <li><a href="#contact" class="nav-item">Contact us</a></li>
+        </ul>
+        <div class="sidebar-logo">
+            <img src="img/image 16.png" alt="Linearts Logo" width="60">
+            <span>LINEARTS<br>STUDIO</span>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+
+    <section id="home" class="home-section">
+        <div class="home-content fade-in">
+            <p class="home-label">DESIGN AGENCY</p>
+            <h1 class="main-title">
+                <span class="blue-text">LineArts</span>Studio
+            </h1>
+            <p class="subtitle">
+                Kami membangun, membuat, dan mengaplikasikan<br>
+                produk digital yang berdampak untuk bisnis Anda.
+            </p>
+            <div class="service-buttons">
+                <button class="pill-btn" id="btn-uiux" onclick="scrollToTab('uiux')">UI/UX Designs</button>
+                <button class="pill-btn" id="btn-poster" onclick="scrollToTab('poster')">Poster Designs</button>
+                <button class="pill-btn" id="btn-marketing" onclick="scrollToTab('marketing')">Marketing Designs</button>
+                <button class="pill-btn" id="btn-art" onclick="scrollToTab('art')">Art Designs</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2 class="section-title fade-in"><span class="blue-text">WE</span> ARE LINEARTS</h2>
+        <div class="about-logo-box fade-in">
+            <img src="img/image 17.png" alt="Linearts Large Logo">
+        </div>
+        <div class="about-text fade-in">
+            <p>Kami tidak hanya membuat, membangun dan mengaplikasikan suatu produk digital,
+               kami juga peduli terhadap produk anda,
+               serta memecahkan masalah melalui kekuatan visual.</p>
+        </div>
+        <button class="pill-btn contact-btn fade-in" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+    </section>
+
+    <section id="works" class="works-section">
+        <h2 class="section-title fade-in"><span class="blue-text">Our</span> Works</h2>
+        <div class="tab-container fade-in">
+            <button class="tab-btn" id="tab-uiux" onclick="openTab(event, 'uiux')">UI/UX</button>
+            <button class="tab-btn" id="tab-marketing" onclick="openTab(event, 'marketing')">Marketing</button>
+            <button class="tab-btn active" id="tab-poster" onclick="openTab(event, 'poster')">Poster</button>
+            <button class="tab-btn" id="tab-art" onclick="openTab(event, 'art')">Art</button>
+        </div>
+
+        <div id="uiux" class="tab-content" style="display: none;"></div>
+        <div id="marketing" class="tab-content" style="display: none;"></div>
+
+        <div id="poster" class="tab-content" style="display: block;">
+            <div class="grid-poster">
+                <div class="card"><img src="img/5 1.png" alt="Poster 1"></div>
+                <div class="card"><img src="img/WONKA (1) 2.png" alt="Poster 2"></div>
+                <div class="card"><img src="img/2 27.png" alt="Poster 3"></div>
+            </div>
+        </div>
+
+        <div id="art" class="tab-content" style="display: none;">
+            <div class="grid-art">
+                <div class="card"><img src="img/Doomsday (1) 1.png" alt="Art 1"></div>
+                <div class="card"><img src="img/Ultron 1.png" alt="Art 2"></div>
+                <div class="card"><img src="img/ElesiszFlameLord 1.png" alt="Art 3"></div>
+                <div class="card"><img src="img/sw999Final 1.png" alt="Art 4"></div>
+                <div class="card"><img src="img/image 19.png" alt="Art 5"></div>
+                <div class="card"><img src="img/image 8.png" alt="Art 6"></div>
+                <div class="card"><img src="img/image 9.png" alt="Art 7"></div>
+                <div class="card"><img src="img/image 11.png" alt="Art 8"></div>
+                <div class="card"><img src="img/Group 162513.png" alt="Art 9"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="global-footer">
+        <div class="footer-grow">
+            <h2><em>Let's Grow<br>Together</em></h2>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-col brand-col">
+                <img src="img/image 16.png" alt="LineArts Logo" class="footer-logo">
+                <h4>PT LineArts Studio</h4>
+            </div>
+            <div class="footer-col">
+                <h4>Business Inquiry</h4>
+                <p>+62 081234567890<br>linearts@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Headquarter</h4>
+                <p>Jl. Mayor Jenderal Sungkono KM 05, Blater, Kalimanah,<br>Purbalingga, Jawa Tengah 53371.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <ul class="social-list">
+                    <li><span class="social-label">Instagram</span><a href="https://www.instagram.com/linearts" target="_blank" rel="noopener">@linearts</a></li>
+                    <li><span class="social-label">TikTok</span><a href="https://www.tiktok.com/@linearts" target="_blank" rel="noopener">linearts</a></li>
+                    <li><span class="social-label">LinkedIn</span><a href="https://www.linkedin.com/company/linearts" target="_blank" rel="noopener">linearts</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
