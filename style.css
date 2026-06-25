@@ -310,7 +310,7 @@ section {
     font-weight: 700;
     font-size: 0.9rem;
     cursor: pointer;
-    transition: background 0.3s, color 0.3s, transform 0.2s;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
 .tab-btn:hover { transform: translateY(-2px); }
@@ -335,6 +335,15 @@ section {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.grid-marketing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 420px));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .card img {
@@ -471,6 +480,7 @@ section {
     }
     .grid-poster { grid-template-columns: 1fr; }
     .grid-art { grid-template-columns: repeat(2, 1fr); }
+    .grid-marketing { grid-template-columns: 1fr; }
 
     .main-title {
         font-size: clamp(2rem, 12vw, 3.5rem);
